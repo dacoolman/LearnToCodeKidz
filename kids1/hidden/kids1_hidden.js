@@ -76,6 +76,7 @@
 	}
 
 	function setLionLeft(newVal) {
+		newVal = newVal >= 0 ? newVal : 0;
 		lion.style.left = newVal + "px";
 	}
 
@@ -86,5 +87,6 @@
 	}
 
 	function setLionTop(newVal) {
+		newVal = newVal >= 0 ? newVal : 0;
 		lion.style.top = newVal + "px";
 	}
