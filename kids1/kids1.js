@@ -15,8 +15,10 @@ var pressUp = function () {
 }
 
 var pressRight = function() {
+	//Getting the current Lion's position from the left
 	var lionLeft = getLionLeft();
 	var newLeft = lionLeft + 50;
+	//Adding this to the lion
 	setLionLeft(newLeft);
 }
 
@@ -28,3 +30,7 @@ var pressDown = function() {
 }
 
 run(pressLeft, pressUp, pressRight, pressDown, pressEnter);
+
+//Extra challenges: make the lion run faster
+//Make the lion run slower
+//Add in your own sound for the lion
